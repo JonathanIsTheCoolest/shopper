@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+[type="button"] {
+  height: 100%;
+  padding: var(--size-ten);
+  border: 1px solid var(--nav-option-bk-color);
+  border-radius: var(--size-ten);
+  background: var(--nav-font-color);
+  color: var(--nav-option-bk-color);
+  font-weight: 800;
+  box-shadow: 0 0 5px var(--nav-option-bk-color);
+  cursor: pointer;
+}
