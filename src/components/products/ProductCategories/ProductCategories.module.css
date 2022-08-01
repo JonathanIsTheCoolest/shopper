@@ -1,0 +1,17 @@
+.navOptions {
+  border: 1px solid var(--nav-option-bk-color);
+  background: var(--nav-font-color);
+  color: var(--nav-option-bk-color);
+  padding: var(--size-ten);
+  border-radius: var(--size-ten);
+  border-top-right-radius: 0;
+  margin: var(--size-five);
+  box-shadow: 0 0 var(--size-five) var(--nav-option-bk-color);
+  font-weight: 700;
+}
+
+.selected {
+  color: var(--product-container-border-color);
+  border-color: var(--product-container-border-color);
+  box-shadow: 0 0 var(--size-five) var(--product-container-border-color);
+}

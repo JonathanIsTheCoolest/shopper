@@ -1,0 +1,14 @@
+.searchBarContainer {
+  margin: var(--size-forty) 0;
+}
+
+.searchBar {
+  padding: var(--size-ten);
+  border-radius: var(--size-ten);
+  border: 2px solid var(--product-container-border-color);
+  color: var(--product-container-border-color);
+}
+
+.searchBarContainer input::placeholder {
+  color: var(--nav-option-bk-color);
+}

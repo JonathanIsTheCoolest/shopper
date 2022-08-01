@@ -1,0 +1,14 @@
+.paymentContainer,
+.paymentContainer form {
+  width: 100%;
+}
+
+.paymentContainer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.paymentContainer form {
+  padding: 0 var(--size-ten) 0
+}

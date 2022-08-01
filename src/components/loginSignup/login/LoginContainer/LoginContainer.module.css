@@ -1,0 +1,9 @@
+.loginContainer,
+.loginContainer label input,
+.loginContainer .title {
+  width: 100%
+}
+
+.loginContainer {
+  margin: 0 var(--size-ten);
+}

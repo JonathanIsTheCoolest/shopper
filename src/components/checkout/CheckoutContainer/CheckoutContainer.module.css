@@ -1,0 +1,129 @@
+.checkoutContainer,
+.checkoutContainerConfirmation {
+  justify-content: center;
+  padding: var(--size-twenty);
+  border: 2px solid var(--product-container-border-color);
+  border-radius: var(--size-ten);
+  box-shadow: 0 0 var(--size-five) var(--product-container-border-color);
+  width: 100%;
+  min-width: 230px;
+}
+
+.checkoutContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1;
+  grid-gap: var(--size-twenty);
+}
+
+.checkoutContainerConfirmation,
+.confirmationFormContainer,
+.confirmationProductSummaryContainer,
+.formContainer,
+.productSummaryContainer {
+  display: flex;
+}
+
+.formContainer,
+.productSummaryContainer {
+  flex-wrap: wrap;
+}
+
+.confirmationFormContainer,
+.confirmationProductSummaryContainer,
+.formContainer,
+.productSummaryContainer {
+  border: 2px solid var(--nav-option-bk-color);
+  padding: var(--size-ten);
+  border-radius: var(--size-five);
+}
+
+.formContainer {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.productSummaryContainer {
+  grid-column: 2/2;
+  grid-row: 1/1;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkoutContainerConfirmation,
+.confirmationFormContainer,
+.confirmationProductSummaryContainer {
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.confirmationFormContainer,
+.confirmationProductSummaryContainer {
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmationFormContainer {
+  margin-right: var(--size-ten);
+}
+
+.confirmationProductSummaryContainer {
+  margin-left: var(--size-ten);
+}
+
+.firstName,
+.city {
+  margin-top: 0.5em;
+}
+
+.address,
+.zipCode,
+.express {
+  margin-bottom: 0.5em;
+}
+
+.zipCode {
+  margin-bottom: 1em;
+}
+
+.standard {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.nameOnCard {
+  margin-top: 0.5em;
+}
+
+.cvv {
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 780px) {
+  .checkoutContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .formContainer,
+  .productSummaryContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .checkoutContainerConfirmation {
+    flex-wrap: wrap;
+  }
+
+  .confirmationFormContainer,
+  .confirmationProductSummaryContainer {
+    margin: 0;
+  }
+
+  .confirmationFormContainer {
+    margin-bottom: var(--size-ten);
+  }
+
+  .confirmationProductSummaryContainer {
+    margin-top: var(--size-ten);
+  }
+}

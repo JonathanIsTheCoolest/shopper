@@ -1,9 +1,106 @@
+.imageContainer,
+.imageContainer img { border-radius: var(--size-ten); }
+
 .imageContainer {
-  width: 400px;
-  height: 400px;
+  width: 21.875rem;
+  height: 21.875rem;
+  position: absolute;
+  border: 2px solid var(--product-container-border-color);
+  background: var(--card-gradient);
+  box-shadow: 0 0 var(--size-five);
 }
 
 .imageContainer img {
   width: 100%;
   height: 100%;
+}
+
+.centerCard,
+.notVisible {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centerCard {
+  transition: 0.5s ease;
+}
+
+.centerCard:hover {
+  width: 31.25rem;
+  height: 31.25rem;
+}
+
+.rightCard,
+.leftCard {
+  top: 35%;
+}
+
+.centerCard {
+  top: 30%;
+  z-index: 50;
+}
+
+.rightCard {
+  right: 20%;
+  z-index: 30;
+}
+
+.leftCard {
+  left: 20%;
+  z-index: 40;
+}
+
+.notVisible {
+  top: 40%;
+  z-index: 20;
+}
+
+@media screen and (max-width: 627px) {
+  .rightCard {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .leftCard {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .imageContainer {
+    height: 18.75rem;
+    width: 18.75rem;
+  }
+
+  .centerCard:hover {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .imageContainer {
+    height: 16.5625rem;
+    width: 16.5625rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .imageContainer {
+    height: 15.625rem;
+    width: 15.625rem;
+  }
+
+  .centerCard:hover {
+    width: 21.875rem;
+    height: 21.875rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+.centerCard:hover {
+    width: 18.75rem;
+    height: 18.75rem;
+  }
 }

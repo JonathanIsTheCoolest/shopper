@@ -1,0 +1,43 @@
+.userContainer,
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoContainer {
+  border: 2px solid var(--nav-option-bk-color);
+  border-radius: var(--size-ten);
+  padding: var(--size-twenty);
+  box-shadow: 0 0 var(--size-five) var(--nav-option-bk-color);
+  margin-bottom: var(--size-twenty);
+  color: var(--product-container-border-color);
+  width: 100%;
+}
+
+.innerInfoContainer {
+width: fit-content;
+text-align: left;
+}
+
+.individualInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--size-twenty);
+}
+
+.individualInfoContainer .infoHeader {
+  color: black;
+  font-weight: 700;
+  width: 140px;
+
+}
+
+.firstName {
+  margin-top: 0.5em;
+}
+
+.phoneNumber {
+  margin-bottom: 0.5em;
+}

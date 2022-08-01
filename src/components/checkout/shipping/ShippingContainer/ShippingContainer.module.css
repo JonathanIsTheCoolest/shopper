@@ -1,0 +1,30 @@
+.containerWidth,
+.inputContainer,
+.inputContainer input,
+.selectContainer,
+.radioContainer {
+  width: 100%;
+}
+
+.formContainer,
+.selectContainer,
+.radioContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formContainer {
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  padding: 0 var(--size-ten) 0;
+  text-align: left;
+}
+
+.selectContainer {
+  justify-content: space-between;
+} 
+
+.radioContainer {
+  flex-direction: column;
+}

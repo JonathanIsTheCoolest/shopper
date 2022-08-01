@@ -1,28 +1,90 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 * { 
-  --nav-option-bk-color: rgb(67, 156, 185);
+  /* --nav-option-bk-color: rgb(67, 156, 185); */
+  --nav-option-bk-color: black;
   --nav-font-color: white;
-  --product-container-border-color: rgb(226, 23, 165);
+  /* --product-container-border-color: rgba(226, 23, 165, 1); */
+  --product-container-border-color: rgb(144, 152, 125);
+  /* --product-hover-color: rgb(242, 242, 242); */
+  --product-hover-color: rgba(198, 198, 153, 0.4);
+  --card-gradient: linear-gradient(0.75turn, rgb(187, 192, 196) 0%, rgba(255, 255, 255) 100%);
   --size-five: 0.3125rem;
   --size-ten: 0.625rem;
   --size-fifteen: 0.9375rem;
   --size-twenty: 1.25rem;
   --size-thirty: 1.875rem;
   --size-forty: 2.5rem;
+  --size-fifty: 3.125rem;
   --size-one-hundred: 6.25rem;
  }
 
 body {
-  margin: 50px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  min-width: 200px;
+  min-width: 300px;
+  max-width: 1400px;
+  margin: 50px auto;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: black;
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid var(--product-container-border-color);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--nav-option-bk-color);
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none !important;
+  border-color: var(--nav-option-bk-color);
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 var(--size-five) var(--nav-option-bk-color);
+}
+
+select:focus {
+  box-shadow: 0 0 var(--size-five) var(--product-container-border-color);
+}
+
+ul {
+  padding: 0;
 }

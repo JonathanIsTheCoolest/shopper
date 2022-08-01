@@ -10,6 +10,7 @@
 
 .innerContainer,
 .nameContainer {
+  position: relative;
   border: 2px solid var(--nav-option-bk-color);
   border-radius: var(--size-ten);
   padding: var(--size-twenty);
@@ -21,18 +22,65 @@
   background: rgba(51,51,51,0.7);
 }
 
+.innerContainer p {
+  color: var(--nav-font-color);
+  background: rgba(0, 0, 0, 0.5);
+  padding: var(--size-five);
+  border-radius: var(--size-five);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 2px solid var(--nav-font-color);
+}
+
 .nameContainer {
-  position: relative;
   margin: 0 auto;
   background: var(--nav-font-color);
   color: var(--nav-font-color);
   -webkit-text-stroke: 1px var(--product-container-border-color);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.x,
+.leftArrow,
+.rightArrow { 
+  position: absolute; 
+  cursor: pointer;
+}
+
+.leftArrow,
+.rightArrow { 
+  top: 50%; 
+  font-size: var(--size-one-hundred);
+  color: var(--nav-font-color);
 }
 
 .x {
-  position: absolute;
   right: var(--size-ten);
   top: var(--size-ten);
   color: var(--product-container-border-color);
-  cursor: pointer;
+}
+
+.leftArrow {
+  left: var(--size-forty);
+}
+
+.rightArrow {
+  right: var(--size-forty);
+}
+
+@media screen and (max-width: 440px) {
+  .leftArrow,
+  .rightArrow {
+    top: 85%;
+  }
+
+  .leftArrow {
+    left: unset;
+    right: 50%;
+  }
+  .rightArrow {
+    right: unset;
+    left: 50%;
+  }
 }

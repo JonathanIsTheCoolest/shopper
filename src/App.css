@@ -21,3 +21,10 @@ li:hover {
   box-shadow: 0 0 5px var(--nav-option-bk-color);
   cursor: pointer;
 }
+
+hr {
+  height: 2px;
+  width: 100%;
+  background: var(--nav-option-bk-color);
+  border-color: transparent;
+}

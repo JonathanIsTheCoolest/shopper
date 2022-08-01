@@ -1,0 +1,85 @@
+.inputAndTitleContainerSelect,
+.inputAndTitleContainerInput {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputAndTitleContainerSelect {
+  margin: var(--size-ten) 0;
+}
+
+.inputAndTitleContainerInput {
+  margin: var(--size-twenty) 0;
+}
+
+.nameContainer {
+  min-width: var(--size-one-hundred);
+}
+
+.name {
+  width: 100%;
+  margin-right: var(--size-ten);
+}
+
+.inputAndSelect {
+  padding: var(--size-ten);
+  border-radius: var(--size-five);
+  box-sizing: border-box;
+}
+
+.inputs {
+  color: var(--product-container-border-color);
+  background: var(--nav-font-color);
+  border: 1px solid var(--product-container-border-color);
+}
+
+.select {
+  color: var(--nav-font-color);
+  background: var(--product-container-border-color);
+  border: 1px solid transparent;
+  border-right: var(--size-ten) solid var(--product-container-border-color);
+}
+
+.select:focus {
+  color: var(--nav-font-color);
+  background: var(--nav-option-bk-color);
+  border: 1px solid transparent;
+  border-right: var(--size-ten) solid var(--nav-option-bk-color);
+  box-shadow: 0 0 var(--size-five) var(--nav-option-bk-color);
+}
+
+.inputContainerRadio
+.errorAndInputContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.inputContainerRadio {
+  width: auto;
+  margin-right: var(--size-twenty);
+}
+
+.errorAndInputContainer {
+  width: 100%;
+}
+
+.inputAndTitleContainerInput .errors, 
+.inputAndTitleContainerSelect .errors {
+  font-size: 12px;
+  color: var(--product-container-border-color);
+  margin: 0;
+}
+
+.shippingMessage {
+  width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+  .inputAndTitleContainerSelect,
+  .inputAndTitleContainerInput {
+    flex-direction: column;
+  }
+}

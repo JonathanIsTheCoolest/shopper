@@ -1,0 +1,117 @@
+.iconList {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+::before,
+::after {
+  z-index: -1;
+}
+
+.iconContainer,
+.iconContainer::before,
+.iconContainer::after,
+.iconContainerCart, 
+.iconContainerCart::after, 
+.iconContainerConfirmation, 
+.iconContainerConfirmation::before {
+  background: var(--nav-option-bk-color);
+}
+
+.iconContainer,
+.iconContainerCart,
+.iconContainerConfirmation {
+  padding: 1.5625rem;
+  border-radius: 50%;
+  width: var(--size-thirty);
+  height: var(--size-thirty);
+  position: relative;
+  margin: 0 auto;
+  cursor: auto;
+}
+
+.icons {
+  font-size: var(--size-twenty);
+  color: var(--nav-font-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iconContainer::before,
+.iconContainer::after,
+.iconContainerCart::after,
+.iconContainerConfirmation::before {
+  content: '';
+  display: block;
+  width: 10vw;
+  height: var(--size-twenty);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: auto;
+}
+
+.iconContainer::before,
+.iconContainerConfirmation::before {
+  right: 90%;
+}
+
+.iconContainer::after,
+.iconContainerCart::after {
+  left: 90%;
+}
+
+/* Progress */
+
+.cartStartCheckout,
+.cartCompleteCart,
+.cartCompleteCart::after,
+.cartCompleteShipping,
+.cartCompleteShipping::before,
+.shippingCompleteShipping,
+.shippingCompleteShipping::before,
+.shippingCompleteShipping::after,
+.shippingCompletePayment,
+.shippingCompletePayment::before,
+.paymentCompletePayment,
+.paymentCompletePayment::before,
+.paymentCompletePayment::after,
+.paymentCompleteConfirmation,
+.paymentCompleteConfirmation::before {
+  background: var(--product-container-border-color);
+}
+
+/* media */
+
+@media screen and (max-width: 650px) {
+  .iconContainer::before,
+  .iconContainer::after,
+  .iconContainerCart::after,
+  .iconContainerConfirmation::before {
+    width: 8vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .iconContainer::before,
+  .iconContainer::after,
+  .iconContainerCart::after,
+  .iconContainerConfirmation::before {
+    width: 6vw;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .iconContainer::before,
+  .iconContainer::after,
+  .iconContainerCart::after {
+    width: var(--size-twenty);
+  }
+
+  .iconContainerConfirmation::before {
+    width: var(--size-forty);
+  }
+}

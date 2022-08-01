@@ -1,0 +1,109 @@
+.inputAndTitleContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: var(--size-twenty) 0;
+}
+
+.name,
+.inputContainer,
+.inputAndErrorContainer,
+.inputs {
+  width: 100%; 
+}
+
+.nameContainer {
+  min-width: 120px;
+  text-align: left;
+}
+
+.name {
+  margin-right: var(--size-ten);
+}
+
+.inputAndErrorContainer {
+  width: 100%;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputs {
+  padding: var(--size-ten);
+  border-radius: var(--size-five);
+  box-sizing: border-box;
+  color: var(--product-container-border-color);
+  background: var(--nav-font-color);
+  border: 1px solid var(--product-container-border-color);
+}
+
+.errors {
+  font-size: 12px;
+  color: var(--product-container-border-color);
+  margin: 0;
+}
+
+.imageContainer,
+.cardType {
+  position: absolute;
+}
+
+.imageContainer {
+  width: var(--size-fifty);
+  height: var(--size-fifty);
+  right: var(--size-five);
+  top: 50%;
+  transform: translateY(-25%);
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+.cardType {
+  font-size: var(--size-ten);
+  color: var(--nav-option-bk-color);
+  font-weight: 800;
+  top: -35%;
+  right: 0;
+}
+
+.cardInput {
+  padding-right: 3.75rem;
+}
+
+.eyePadding {
+  padding-right: 1.625rem;
+}
+
+.eyeContainer {
+  position: absolute;
+  right: var(--size-five);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 550px) {
+  .inputAndTitleContainer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .cardType {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .imageContainer {
+    display: none;
+  }
+
+  .cardInput {
+    padding-right: unset;
+  }
+}

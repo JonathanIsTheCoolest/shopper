@@ -1,3 +1,8 @@
+.container,
+.imageContainer {
+  transition: 0.5s ease;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -7,6 +12,7 @@
   border-radius: var(--size-ten);
   padding: var(--size-twenty) var(--size-ten);
   box-shadow: 0 0 5px var(--product-container-border-color);
+  width: 100%;
 }
 
 .imageContainer,
@@ -14,6 +20,13 @@
 
 .imageContainer {
   max-width: var(--size-one-hundred);
+  border: 1px solid transparent;
+  border-radius: var(--size-five);
+}
+
+.imageContainer:hover {
+  max-width: 12.5rem;
+  background-color: var(--product-hover-color);
 }
 
 .imageContainer img {
@@ -25,6 +38,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .inStock,
@@ -32,6 +47,10 @@
 .addToCartButton {
   margin: var(--size-five);
 }
+
+.inCart { 
+  margin: auto var(--size-five);
+ }
 
 .selectAddAmount {
   border: var(--size-ten) solid rgb(0 0 0 / 0%);
@@ -44,4 +63,63 @@
 .addToCartButton {
   border-bottom-right-radius: 0;
   height: var(--size-forty);
+}
+
+.notEnoughMessageContainerHidden {
+  visibility: hidden;
+  opacity: 0.9;
+  transition: visibility 0s 5s, opacity 5s linear;
+}
+
+.notEnoughMessageContainer {
+  position: absolute;
+  top: 0;
+  right: -150%;
+  background: var(--nav-font-color);
+  color: var(--product-container-border-color);
+  border: 1px solid var(--product-container-border-color);
+  border-radius: var(--size-ten);
+  border-bottom-left-radius: 0;
+  box-shadow: 0 var(--size-five) var(--size-twenty) -0.3125rem rgba(115,115,115,0.75),
+                -0.625rem 0 var(--size-twenty) -0.3125rem rgba(115,115,115,0.75);
+  min-width: var(--size-one-hundred);
+  max-height: fit-content;
+  padding: var(--size-ten);
+
+
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 5s linear;
+}
+
+.tooMuchCartMessageContainer {
+  top: -10%;
+  right: -110%;
+}
+
+@media screen and (max-width: 990px) {
+  .notEnoughMessageContainer {
+    top: -100%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .imageContainer:hover {
+    max-width: var(--size-one-hundred);
+  }
+
+  .container:hover {
+    background-color: var(--product-hover-color);
+  }
+}
+@media screen and (max-width: 400px) {
+  .imageContainer:hover {
+    max-width: 12.5rem;
+  }
+
+  .container:hover {
+    background-color: var(--nav-font-color);
+  }
 }

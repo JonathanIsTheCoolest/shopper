@@ -3,6 +3,7 @@
 .totalIsGreaterThan100,
 .totalIsGreaterThan1000,
 .items { 
+  cursor: pointer;
   box-sizing: border-box;
   background: var(--nav-option-bk-color);
 }
@@ -49,4 +50,13 @@
 
 .totalIsGreaterThan1000 { 
   font-size: var(--size-ten); 
+}
+
+.selected {
+  background: var(--product-container-border-color);
+}
+
+.cartSelected {
+  color: var(--nav-option-bk-color);
+  background: var(--product-container-border-color);
 }

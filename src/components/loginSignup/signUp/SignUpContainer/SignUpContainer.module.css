@@ -1,0 +1,9 @@
+.signUpContainer,
+.signUpContainer label input,
+.signUpContainer .title {
+  width: 100%
+}
+
+.signUpContainer {
+  margin: 0 var(--size-ten);
+}

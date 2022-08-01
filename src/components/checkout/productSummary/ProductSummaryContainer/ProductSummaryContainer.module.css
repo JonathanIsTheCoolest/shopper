@@ -1,0 +1,35 @@
+.productSummaryContainer {
+  width: 100%;
+}
+
+.productSummaryContainer [type="button"] {
+  height: auto;
+  margin: var(--size-ten) 0;
+  border-color: var(--product-container-border-color);
+  box-shadow: 0 0 var(--size-five) var(--product-container-border-color);
+  color: var(--product-container-border-color);
+}
+
+.productSummaryContainer hr {
+  background: var(--product-container-border-color);
+  height: 1px;
+  margin: var(--size-ten) 0;
+}
+
+.productSummaryContainer h3,
+.productSummaryContainer h2 {
+  margin: var(--size-five);
+}
+
+.productSummaryContainer h3 {
+  font-weight: 400;
+  font-size: var(--size-fifteen);
+}
+
+.productContainerVisible {
+  display: block;
+}
+
+.productContainerHidden {
+  display: none;
+}

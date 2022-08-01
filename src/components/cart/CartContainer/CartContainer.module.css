@@ -1,0 +1,45 @@
+.displayProductContainer,
+.checkoutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.checkoutContainer {
+  margin: var(--size-twenty);
+}
+
+.displayOrHideContentButtons [type="button"] {
+  margin: var(--size-ten);
+}
+
+.hideProductContainer {
+  display: none;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttonContainer label {
+  margin: var(--size-ten)
+}
+
+.dataTotalText {
+  color: var(--product-container-border-color);
+  
+}
+
+.noDataTotalText {
+  color: var(--nav-option-bk-color);
+  margin: var(--size-twenty) 0;
+}
+
+@media screen and (max-width: 365px) {
+  .buttonContainer {
+    flex-direction: column;
+  }
+}

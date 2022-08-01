@@ -7,10 +7,24 @@ class Home extends React.Component {
   render() {
     const displayHomePage = 
       <div>
-        <h2>About</h2>
+        <h2 className={styles.about}>About</h2>
         <p className={styles.aboutParagraph}>
           {lorem}
         </p>
+        <div className={styles.shoutOutContainer}>
+          <h2 className={styles.shoutOut}>
+            Shout outs to...
+          </h2>
+          <div>
+            <strong>Font Awesome</strong> for the use of there amazing icon library!
+          </div>
+          <div>
+            <strong>sketch.io</strong> for there awesome creative tool that I used to create the little drawing on the confirmation page!
+          </div>
+          <div>
+            <strong>commerce.js</strong> for the use of there super easy to use API!
+          </div>
+        </div>
       </div>
     ;
     return(

@@ -2,3 +2,23 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.about,
+.shoutOut {
+  font-size: var(--size-thirty);
+}
+
+.shoutOutContainer {
+  margin: var(--size-twenty);
+  color: var(--nav-option-bk-color);
+}
+
+.about,
+.shoutOut,
+.shoutOutContainer strong {
+  color: var(--product-container-border-color);
+}
+
+.shoutOut {
+  margin: 0 0 var(--size-ten);
+}
