@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## API Key !IMPORTANT
+
+This project uses the commerce.js API and will not run without the key
+
+Create file .env  
+
+add to .env:
+REACT_APP_SHOPPER_SECRET_API_KEY=secret_API_key_goes_here
