@@ -41,8 +41,6 @@ class ProductImageContainer extends React.Component {
             }
           </div>
           <p>{description}</p>
-          {/* {leftArrow}
-          {rightArrow} */}
         </div>
         {leftArrow}
         {rightArrow}

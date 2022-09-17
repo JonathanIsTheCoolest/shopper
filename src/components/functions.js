@@ -180,10 +180,6 @@ export const limitAndFormatNumbers = (name, value, maxLength) => {
   }
 }
 
-// LOL 😅 i know there's a heck of a lot of if statements in my limitAndFormatExpirationDate Function
-// I did it at first with just one regEx something like /(0[1-9]|1[0-2])\/?(\d){2}/ but it just wasn't limiting
-// numbers the way that i wanted it to. So I did this haha :). I'd love some suggestions on this one!!!
-
 export const limitAndFormatExpirationDate = (value) => {
   let returnValue;
   const numbersArray = [];
@@ -209,7 +205,7 @@ export const limitAndFormatExpirationDate = (value) => {
         }
       }
     } else if (index === '2') {
-      if (value[index] === expYearIndexOneRangeOne ||( value[index] * 1) === expYearIndexOneRangeTwo) {
+      if (value[index] === expYearIndexOneRangeOne || ( value[index] * 1) === expYearIndexOneRangeTwo) {
         numbersArray.push(value[index])
       }
     } else if (index === '3') {

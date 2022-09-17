@@ -29,12 +29,6 @@ class GetCustomerList {
           const data = json.data;
           let user;
 
-          // if (data && data.length) {
-          //   for (const item of data) {
-          //     emailArray.push(item.email)
-          //   }
-          // }
-
           if (data && data.length) {
             for (const item of data) {
               emailArray.push(item.email)

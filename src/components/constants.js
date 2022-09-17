@@ -1,7 +1,5 @@
  export const SHOPPER_SECRET_API_KEY = process.env.REACT_APP_SHOPPER_SECRET_API_KEY;
 
-// I Know The Naming Scheme On Most Of These Are Incorrect But By The Time I Realized They Should Have Been Constants I Was Pretty Far Along With The Project. So They're Lower Case... :)
-
 export const cart = 'cart';
 export const shipping = 'shipping';
 export const payment = 'payment';

@@ -60,24 +60,3 @@ export const emailValidation = (email) => {
     )
   } 
 }
-
-// export const emailValidation = (email, credentials) => {
-//   const regEx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ ;
-//   if (!email.length) {
-//     return (
-//       ''
-//     )
-//   } else if (!email.match(regEx)) {
-//     return (
-//       'Enter A Valid Email Address'
-//     )
-//   } else if (credentials && credentials.length) {
-//     for (const credential in credentials) {
-//       if (credentials[credential].email === email) {
-//         return (
-//           'An Account Already Exists With This Email Address'
-//         )
-//       }
-//     }
-//   }
-// }

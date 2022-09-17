@@ -230,7 +230,6 @@ class CartContainer extends React.Component {
       if (res && res.response.ok) {
         this.setState({ checkoutTokenId: res.checkoutTokenId, generatingCheckoutToken: false, error: false })
         this.generateShippingCountries(res.checkoutTokenId)
-        // console.log(res.json);
       } else {
         this.setState({ checkoutTokenId: '', generatingCheckoutToken: false, error: true })
         console.log('Something went wrong');
